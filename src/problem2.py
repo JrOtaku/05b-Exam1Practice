@@ -114,8 +114,13 @@ def problem2a(circle, rectangle, window):
 
     circle.attach_to(window)
     rectangle.attach_to(window)
+    window.render()
+    window.continue_on_mouse_click()
     line = rg.Line(rectangle.get_upper_right_corner(),rectangle.get_lower_left_corner())
+    line.arrow = "last"
     line.attach_to(window)
+    window.render()
+    window.continue_on_mouse_click()
     circle.fill_color=rectangle.outline_color
 
     window.render()
