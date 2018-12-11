@@ -38,7 +38,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 2.  READ the green doc-string for the:
+# Done: 2.  READ the green doc-string for the:
 #   - is_prime
 #   - sum_of_digits
 # functions defined below.  You do NOT need to understand their
@@ -106,7 +106,7 @@ def sum_of_digits(number):
 def run_test_problem1a():
     """ Tests the   problem1a   function. """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement this TEST function.
+    # Done: 3. Implement this TEST function.
     #   It TESTS the  problem1a  function defined below.
     #   Include at least **   4   ** tests (we wrote two for you).
     # -------------------------------------------------------------------------
@@ -138,6 +138,16 @@ def run_test_problem1a():
     print_actual_result_of_test(expected, actual, test_results, precision=3)
 
     print_summary_of_test_results(test_results)
+
+    expected = 1.135
+    actual = problem1a(1, -2)
+    print('Test 3 expected:', expected)
+    print('       actual:  ', actual)
+
+    expected = 1.278
+    actual = problem1a(-30, -100)
+    print('Test 4 expected:', expected)
+    print('       actual:  ', actual)
 
     # -------------------------------------------------------------------------
     # TO DO: 2 (continued).
@@ -347,7 +357,7 @@ def problem1c(n):
            and the sum of the digits in 223092870 is 33.
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # Done: 7. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ###########################################################################
